@@ -1,0 +1,31 @@
+# 第3章 生成AIアプリの開発手法
+
+- プロンプトの種類
+  - システムプロンプト
+    - 生成AIアプリを開発する際に、システムとして生成AIに指定したい内容（タスクや目的の明確化、性格や口調の設定など）を記述するために利用
+    - システムプロンプトは、一連の生成AIとのやりとりにおいて一つだけ指定する
+  - ユーザプロンプト
+    - ユーザからの質問や指示を指定するプロンプト
+    - 生成AIアプリの利用者が入力した内容がセットされるイメージ
+      会話形式の場合は一つのやり取りの中に複数含まれる
+  - アシスタントプロンプト
+    - 生成AIが生成した文字列
+    - 会話形式の場合は、ユーザプロンプトとアシスタントプロンプトが交互に登場するイメージ
+- プロンプトエンジニアリング
+  - [Amazon Bedrock - プロンプトエンジニアリングガイドライン](https://docs.aws.amazon.com/ja_jp/bedrock/latest/userguide/prompt-engineering-guidelines.html)
+  - [Anthropic - Prompt engineering overview](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview)
+- LangChain
+  - コンポーネント
+    - LangChain
+      - Chain や Agent などのアプリケーションを構築するアーキテクチャ
+    - LangChain-Community
+      - 様々な3rd party モジュールをまとめたライブラリ
+    - LangChain-Core
+      - ベースとなる基底クラス(Core)や LangChain Expression Language (LCEL) で構成されるコンポーネント
+    - Templates
+      - さまざまなプロンプトのテンプレート
+    - LangServe
+      - LangChain で構築したアプリケーションを REST API 形式で提供するライブラリ
+    - LangSmith
+      - 生成AIアプリの評価やトレースに使用するサービス
+      - OSS ではなくサービスの形式で提供

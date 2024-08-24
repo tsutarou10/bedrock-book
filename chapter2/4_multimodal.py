@@ -1,5 +1,6 @@
 import base64
 import json
+
 from bedrock_client import BedrockClient
 
 bc = BedrockClient()
@@ -25,7 +26,7 @@ prompt_config = {
                 },
                 {
                     "type": "text",
-                    "text": "この画像のキャラクターは何？日本語で説明して",
+                    "text": "この画像は何？日本語で説明して",
                 },
             ],
         },

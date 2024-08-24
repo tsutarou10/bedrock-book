@@ -3,8 +3,8 @@ import uuid
 import boto3
 import streamlit as st
 
-agent_id = "<agent_id>"
-agent_alias_id = "<agent_alias_id>"
+agent_id = "WYRUR8A5JS"
+agent_alias_id = "6L1YNIRPYA"
 session_id = str(uuid.uuid1())
 my_session = boto3.Session(profile_name="default", region_name="us-east-1")
 client = my_session.client("bedrock-agent-runtime")
